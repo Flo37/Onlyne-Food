@@ -111,7 +111,7 @@ function confirmation(e) {
     e.preventDefault()
     if (form.reportValidity()){
         localStorage.clear()
-    //   required manque encore
+
             document.getElementById("btn").style.display = "none"
             document.getElementById("form").style.display = "none"
             document.getElementById("order").style.display="none"
