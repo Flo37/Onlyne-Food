@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.box{
+    width: 600px;
+    margin:auto;
+    box-shadow: 1px 1px 4px 2px grey;
+    border-radius:10px;
+    position: relative;
+    padding-bottom: 1px;
+}
+nav{
+   background-color: goldenrod;
+   font-family: "Gravitas One", serif;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+}
+nav h1{
+    margin: 0;
+}
+nav span{
+    margin-top: 15px;
+
+}
+
+/* _____________contents */
+.main-container{
+     font-family: "Inconsolata", monospace;
+}
+.head{
+    font-weight: 900;
+    color: red;
+    text-transform: uppercase;
+    border-bottom: 12px dotted rgb(22, 183, 228);
+    width: fit-content;
+    margin:15px auto;
+}
+
+.container{
+padding: 0;
+margin: 0;
+ background-color: antiquewhite;
+}
+
+.liste{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+
+
+}
+
+.image{
+    padding:20px 0 ;
+    background-color: rgb(22, 183, 228);
+    flex: 1;
+    text-align: center;
+}
+.emoji{
+    font-size: 4rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.emoji:hover{
+    background-color: red;
+    border-radius: 4px;
+}
+.content{
+
+flex: 6;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+ .content h3{
+width: 8vw;
+}
+.content p{
+min-width: 50%;
+
+} 
+
+
+
+/* order list */
+
+.order{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+    margin: auto;
+    color: white;
+    background-color: #111;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.366);
+}
+.order span{
+    font-size: 2em;
+}
+.order h3{
+    margin: 0;
+    padding: 0;
+    width: 6vw;
+}
+/* totalPrice */
+#total{
+    text-align: center;
+    color: red;
+    padding: 20px 0;
+}
+#total h2{
+    margin: 0;
+}
+
+
+/* validation for buying */
+ .footer{
+    margin: 20px 0;
+    text-align: center;
+ }
+#btn{
+    border: none;
+    background-color: tomato;
+    padding: .8em 2em;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    margin: auto;
+}
+
+
+/* -----------form */
+form{
+    position: absolute;
+    display: none;
+    transform: translate(75%,-175%);
+    width: 45%;
+    margin: auto;
+    padding: .5em;
+    box-shadow: 1px 2px 4px black;
+    border-radius: 5px;
+    padding-bottom: .5em;
+    background-color: white;
+}
+#deleteBtn{
+   width: 50px;
+}
+form h3{
+    font-size: 1em;
+}
+input{
+    width: 100%;
+    padding: .5rem 0;
+    margin: 10px 0;
+    border: 1px solid saddlebrown;
+}
+
+form button{
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1.2em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: violet;
+    font-weight: 700;
+}
+
+
+/* celebration */
+
+.celebrate{
+    background-image: url(/gif/celebration.gif);
+    background-size:contain;
+    font-size: 1.5em;
+}
+.thanksGive{
+    color:rgb(75, 146, 149);
+    justify-self: center;
+}
+strong{
+    color: red;
+    text-transform: uppercase;
+    border-bottom: 3px dotted black;
+}

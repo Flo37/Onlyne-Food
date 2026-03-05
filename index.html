@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-com</title>
+
+    <!-- css -->
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="box">
+       
+        <nav>
+            <h1>Best food store</h1>
+            <span> Floris's Resto</span>
+
+        </nav>
+        <div class="main-container" >
+            <h2 class="head">our-store</h2>
+            <div id="container" class="container"></div>
+            
+        </div>
+        <div id="order"></div>
+        <div id="total"></div>
+        <div id="confirmation"></div>
+        <section class="footer" if="footer">
+            <button type="submit" class="btn" id="btn">Checkout</button>
+            <form id="form">
+                <button id="deleteBtn">X</button>
+                <h3>Please complete your payment</h3>
+                <input id="names"
+                type="text" required 
+                placeholder="Your Name...">
+                <input type="email" required placeholder="Your Email...">
+                <input 
+                    id="cardNumber" 
+                    type="text" 
+                    inputmode="numeric" 
+                    autocomplete="cardNumber" 
+                    maxlength="19" 
+                    placeholder="Card number" 
+                    required
+                    >
+                <button type="submit" 
+                id="acceptBtn">Accept</button>
+            </form>
+        </section>
+    </section>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
