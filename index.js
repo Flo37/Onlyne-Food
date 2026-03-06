@@ -112,10 +112,10 @@ function confirmation(e) {
     if (form.reportValidity()){
         localStorage.clear()
 
-            document.getElementById("btn").style.display = "none"
+            document.getElementById("btn" ).style.display = "none"
             document.getElementById("form").style.display = "none"
-            document.getElementById("order").style.display="none"
-            document.getElementById("total").style.display="none"
+            document.getElementById("order").style.display ="none"
+            document.getElementById("total").style.display ="none"
         let confirm = `
             <div class="celebrate">
             <h2 class="thanksGive"> Thank you <strong>${document.getElementById("names").value}</strong> to Choose Us🥳</h2>
